@@ -111,7 +111,7 @@ a{
 /* ================= HERO ================= */
 .hero{
     height:90vh;
-    background:url("skin.png") center/cover no-repeat;
+    background:url("skin1.png") center/cover no-repeat;
     display:flex;
     align-items:center;
     justify-content:center;
