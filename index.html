@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GUZELLIK OM | متجر الجمال</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+
+<div class="container nav">
+
+<!-- LOGO -->
+<div class="logo">
+<img src="logo.png" alt="GUZELLIK OM">
+</div>
+
+<!-- NAV -->
+<ul class="nav-links">
+
+<li><a href="index.html">الرئيسية</a></li>
+<li><a href="products.html">المنتجات</a></li>
+<li><a href="hair.html">الشعر</a></li>
+<li><a href="skin.html">البشرة</a></li>
+<li><a href="makeup.html">المكياج</a></li>
+<li><a href="contact.html">تواصل معنا</a></li>
+
+</ul>
+
+<!-- ICONS -->
+<div class="icons">
+
+    <!-- Cart -->
+    <a href="cart.html" class="cart-icon">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span id="cart-count">0</span>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://instagram.com/guzellik__om" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+</div>
+
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+
+<div class="hero-content">
+
+<h4>DISCOVER YOUR NATURAL BEAUTY</h4>
+
+<h1>جمالك يبدأ من هنا</h1>
+
+<p>
+أفضل منتجات العناية بالبشرة والشعر والمكياج
+بجودة تركية أصلية
+</p>
+
+<a href="products.html" class="btn">
+تسوقي الآن
+</a>
+
+<a href="https://wa.me/96891102129"
+class="btn-outline"
+target="_blank">
+
+<i class="fa-brands fa-whatsapp"></i>
+اطلبي عبر واتساب
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section class="features">
+
+<div class="feature-box">
+<i class="fa-solid fa-truck-fast"></i>
+<h3>توصيل سريع</h3>
+<p>لكل دول الخليج وسلطنة عمان</p>
+</div>
+
+<div class="feature-box">
+<i class="fa-solid fa-certificate"></i>
+<h3>منتجات أصلية</h3>
+<p>جودة مضمونة 100%</p>
+</div>
+
+<div class="feature-box">
+<i class="fa-solid fa-lock"></i>
+<h3>دفع آمن</h3>
+<p>خصوصيتك محفوظة</p>
+</div>
+
+<div class="feature-box">
+<i class="fa-solid fa-headset"></i>
+<h3>دعم العملاء</h3>
+<p>نرد عليك بسرعة</p>
+</div>
+
+</section>
+
+<!-- ================= CATEGORIES ================= -->
+<section class="categories">
+
+<h2 class="section-title">تسوقي حسب الفئة</h2>
+
+<div class="category-grid">
+
+<a href="hair.html" class="category-card">
+<img src="hair.png">
+<h3>العناية بالشعر</h3>
+</a>
+
+<a href="skin.html" class="category-card">
+<img src="sskin.png">
+<h3>العناية بالبشرة</h3>
+</a>
+
+<a href="makeup.html" class="category-card">
+<img src="makeup.png">
+<h3>المكياج</h3>
+</a>
+
+</div>
+
+</section>
+
+<!-- ================= BEST SELLERS ================= -->
+<section class="products-section">
+
+<h2 class="section-title">الأكثر مبيعًا</h2>
+
+<div class="products-grid">
+
+<!-- PRODUCT 1 -->
+<div class="product-card">
+
+<img src="mascara3.jpeg">
+
+<h3>Beaulis Mascara</h3>
+
+<p>تكثف و تطيل الرموش اطلالة جذابة</p>
+
+<span class="price">3.000 ر.ع</span>
+
+<button class="btn"
+onclick="addToCart('Mascara',3.000,'mascara3.jpeg')">
+
+أضيفي إلى السلة
+
+</button>
+
+</div>
+
+<!-- PRODUCT 2 -->
+<div class="product-card">
+
+<img src="maskcollagen.png">
+
+<h3>mask collagen-ماسك الكولاجين</h3>
+
+<p>يرطب البشرة و يزيد النضارة</p>
+
+<span class="price">2.500 ر.ع</span>
+
+<button class="btn"
+onclick="addToCart('mask collagen',2.500,'maskcollagen.png')">
+
+أضيفي إلى السلة
+
+</button>
+
+</div>
+
+<!-- PRODUCT 3 -->
+<div class="product-card">
+
+<img src="tonner.png">
+
+<h3>Hair Tonic</h3>
+
+<p>تقوية الشعر ومنحه لمعان</p>
+
+<span class="price">3.500 ر.ع</span>
+
+<button class="btn"
+onclick="addToCart('Hair Tonic',3.500,'tonner.png')">
+
+أضيفي إلى السلة
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="footer-content">
+
+<h2>GUZELLIK OM</h2>
+
+<p>
+متجر متخصص في منتجات العناية بالبشرة والشعر والمكياج
+بجودة تركية أصلية.
+</p>
+
+<div class="contact-info">
+
+<p>
+<i class="fa-brands fa-whatsapp"></i>
+واتساب: +96891102129
+</p>
+
+<p>
+<i class="fa-brands fa-instagram"></i>
+@guzellik__om
+</p>
+
+</div>
+
+<div class="social-icons">
+
+<a href="https://wa.me/96891102129" target="_blank">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<a href="https://instagram.com/guzellik__om" target="_blank">
+
+<i class="fa-brands fa-instagram"></i>
+
+</a>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+© 2026 GUZELLIK OM | جميع الحقوق محفوظة
+
+</div>
+
+</footer>
+<!-- ================= SCRIPT ================= -->
+<script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+// ===============================
+// GUZELLIK OM V3 - CART SYSTEM
+// ===============================
+
+// تحميل السلة من المتصفح
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+// ===============================
+// حفظ السلة
+// ===============================
+function saveCart(){
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+// ===============================
+// إضافة منتج للسلة
+// ===============================
+function addToCart(name, price, image){
+
+    cart.push({
+        name: name,
+        price: price,
+        image: image
+    });
+
+    saveCart();
+    updateCartCount();
+	displayCart();
+    showToast("تمت إضافة المنتج 🛍️");
+}
+
+// ===============================
+// حذف منتج
+// ===============================
+function removeItem(index){
+
+    cart.splice(index, 1);
+
+    saveCart();
+    updateCartCount();
+    displayCart();
+
+    showToast("تم حذف المنتج 🗑️");
+}
+
+// ===============================
+// عرض السلة في صفحة cart
+// ===============================
+function displayCart(){
+
+    const cartItems = document.getElementById("cart-items");
+    const total = document.getElementById("total");
+    const checkout = document.getElementById("checkout");
+
+    if(!cartItems) return;
+
+    cartItems.innerHTML = "";
+
+    let totalPrice = 0;
+    let message = "🛍️ طلب جديد:%0A%0A";
+
+    cart.forEach((item, index)=>{
+
+        totalPrice += item.price;
+
+        message += `• ${item.name} - ${item.price} ر.ع%0A`;
+
+        cartItems.innerHTML += `
+        <div class="cart-item">
+            <img src="${item.image}">
+            <div class="cart-info">
+                <h3>${item.name}</h3>
+                <p>${item.price} ر.ع</p>
+            </div>
+
+            <button class="remove-btn" onclick="removeItem(${index})">
+                حذف
+            </button>
+        </div>
+        `;
+    });
+
+    if(total) total.innerText = totalPrice.toFixed(3) + " ر.ع";
+
+    if(checkout){
+        checkout.href = "https://wa.me/96891102129?text=" + message;
+    }
+}
+
+// ===============================
+// تحديث عداد السلة
+// ===============================
+function updateCartCount(){
+
+    const count = document.getElementById("cart-count");
+
+    if(count){
+        count.innerText = cart.length;
+    }
+}
+
+// ===============================
+// Toast Notification
+// ===============================
+function showToast(message){
+
+    let toast = document.getElementById("toast");
+
+    if(!toast) return;
+
+    toast.innerText = message;
+    toast.classList.add("show");
+
+    setTimeout(()=>{
+        toast.classList.remove("show");
+    }, 2000);
+}
+
+// ===============================
+// تشغيل تلقائي عند فتح أي صفحة
+// ===============================
+updateCartCount();
+displayCart();

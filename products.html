@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>المنتجات | GUZELLIK OM</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+
+<div class="container nav">
+
+<!-- LOGO -->
+<div class="logo">
+<img src="logo.png" alt="GUZELLIK OM">
+</div>
+
+<!-- NAV -->
+<ul class="nav-links">
+
+<li><a href="index.html">الرئيسية</a></li>
+<li><a href="products.html">المنتجات</a></li>
+<li><a href="hair.html">الشعر</a></li>
+<li><a href="skin.html">البشرة</a></li>
+<li><a href="makeup.html">المكياج</a></li>
+<li><a href="contact.html">تواصل معنا</a></li>
+
+</ul>
+
+<!-- ICONS -->
+<div class="icons">
+
+    <!-- Cart -->
+    <a href="cart.html" class="cart-icon">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span id="cart-count">0</span>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://instagram.com/guzellik__om" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+</div>
+
+</header>
+<!-- ================= HERO TITLE ================= -->
+<section class="categories">
+
+<h2 class="section-title">🛍️ جميع المنتجات</h2>
+
+<p style="color:#777; margin-top:-10px;">
+اختاري منتجاتك المفضلة من متجر GUZELLIK OM
+</p>
+
+</section>
+
+
+<!-- ================= PRODUCTS GRID ================= -->
+<section class="products-section">
+
+<div class="products-grid">
+
+<!-- PRODUCT 1 -->
+<div class="product-card" data-category="makeup">
+
+<img src="greenmascara.png">
+
+<h3>Beaulis Mascara</h3>
+
+<p>تعطي رموش كثيفة وطويلة</p>
+
+<span class="price">3.000 ر.ع</span>
+
+<button class="btn"
+onclick="addToCart('Mascara',3.000,'greenmascara.png')">
+أضيفي إلى السلة
+</button>
+
+</div>
+
+<!-- PRODUCT 2 -->
+<div class="product-card" data-category="makeup">
+
+<img src="Lipstick.png">
+
+<h3>روج زيبت-beulis ZIPIT</h3>
+
+<p>لون احمر ثابت </p>
+
+<span class="price">2.000 ر.ع</span>
+
+<button class="btn"
+onclick="addToCart('Lipstick',2.000,'Lipstick.png')">
+أضيفي إلى السلة
+</button>
+
+</div>
+
+<!-- PRODUCT 3 -->
+<div class="product-card" data-category="skin">
+
+<img src="maskcollagen.png">
+
+<h3>ماسك الكولاجين</h3>
+
+<p>ترطيب وإشراقة للبشرة</p>
+
+<span class="price">1.500 ر.ع</span>
+
+<button class="btn"
+onclick="addToCart('Collagen Mask',1.500,'maskcollagen.png')">
+أضيفي إلى السلة
+</button>
+
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="product-card" data-category="hair">
+
+<img src="tonner.png">
+
+<h3>تونر الشعر</h3>
+
+<p>تقوية ولمعان للشعر</p>
+
+<span class="price">3.500 ر.ع</span>
+
+<button class="btn"
+onclick="addToCart('Hair Tonic',3.500,'tonner.png')">
+أضيفي إلى السلة
+</button>
+
+</div>
+
+<!-- PRODUCT 5 -->
+<div class="product-card" data-category="makeup">
+
+<img src="flormar.png">
+
+<h3>روج و ومحدد شفايف -Flormar</h3>
+
+<p>ثبات عالي ولمعة جميلة</p>
+
+<span class="price">6.000 ر.ع</span>
+
+<button class="btn"
+onclick="addToCart('Flormar Set',6.000,'flormar.png')">
+أضيفي إلى السلة
+</button>
+
+</div>
+
+<!-- PRODUCT 6 -->
+<div class="product-card" data-category="makeup">
+
+<img src="browpencil.jpeg">
+
+<h3>قلم حواجب</h3>
+
+<p>تحديد طبيعي ودقيق</p>
+
+<span class="price">2.000 ر.ع</span>
+
+<button class="btn"
+onclick="addToCart('Brow Pencil',2.000,'browpencil.jpeg')">
+أضيفي إلى السلة
+</button>
+
+</div>
+
+<!-- PRODUCT 7 -->
+<div class="product-card" data-category="makeup">
+
+<img src="lipstik2.png">
+
+<h3>روج زيبت-beulis ZIPIT</h3>
+
+<p>لون نيود وردي ناعم وانيق </p>
+
+<span class="price">2.000 ر.ع</span>
+
+<button class="btn"
+onclick="addToCart('Lipstick',2.000,'lipstik2.png')">
+أضيفي إلى السلة
+</button>
+
+</div>
+
+<!-- PRODUCT 8 -->
+<div class="product-card" data-category="makeup">
+
+<img src="mascara3.jpeg">
+
+<h3>Beaulis Mascara</h3>
+
+<p>تكثف و تطيل الرموش اطلالة جذابة </p>
+
+<span class="price">3.000 ر.ع</span>
+
+<button class="btn"
+onclick="addToCart('Mascara',3.000,'mascara3.jpeg')">
+أضيفي إلى السلة
+</button>
+
+</div>
+
+<!-- PRODUCT 9 -->
+<div class="product-card" data-category="skin">
+
+<img src="maskcoffee.png">
+
+<h3>ماسك القهوة</h3>
+
+<p>نعومة وإشراقة للبشرة</p>
+
+<span class="price">1.500 ر.ع</span>
+
+<button class="btn"
+onclick="addToCart('Coffee Mask',1.500,'maskcoffee.png')">
+أضيفي إلى السلة
+</button>
+
+</div>
+
+<!-- PRODUCT 10 -->
+<div class="product-card" data-category="makeup">
+
+<img src="blush1.jpeg">
+
+<h3>بلاشر-Beaulis Touch IT</h3>
+
+<p>بلاشر خوخي لون طبيعي </p>
+
+<span class="price">2.500 ر.ع</span>
+
+<button class="btn"
+onclick="addToCart('بلاشر-Beaulis Touch IT',2.500,'blush1.jpeg')">
+أضيفي إلى السلة
+</button>
+
+</div>
+
+<!-- PRODUCT 11 -->
+<div class="product-card" data-category="makeup">
+
+<img src="blush2.jpeg">
+
+<h3>بلاشر-Beaulis Touch IT</h3>
+
+<p>بلاشر وردي انيق </p>
+
+<span class="price">2.500 ر.ع</span>
+
+<button class="btn"
+onclick="addToCart('بلاشر-Beaulis Touch IT',2.500,'blush2.jpeg')">
+أضيفي إلى السلة
+</button>
+
+</div>
+
+<!-- PRODUCT 12 -->
+<div class="product-card" data-category="makeup">
+
+<img src="brwo.jpeg">
+
+<h3>ماسكارا و جل حواجب-Brow Sculpt</h3>
+
+<p>يعطي ثباتاً طبيعياً للحواجب</p>
+
+<span class="price">3.000 ر.ع</span>
+
+<button class="btn"
+onclick="addToCart('جل حواجب-Brow Sculpt',3.000,'brwo.jpeg')">
+أضيفي إلى السلة
+</button>
+
+</div>
+
+<!-- PRODUCT 13 -->
+<div class="product-card" data-category="makeup">
+
+<img src="Eyeliner.jpeg">
+
+<h3>ايلاينر-Beaulis GLIDEIT</h3>
+
+<p>يعطي مظهر انيق وسهل التطبيق</p>
+
+<span class="price">2.000 ر.ع</span>
+
+<button class="btn"
+onclick="addToCart('ايلاينر-Beaulis GLIDEIT',2.000,'Eyeliner.jpeg')">
+أضيفي إلى السلة
+</button>
+
+</div>
+
+<!-- PRODUCT 14 -->
+<div class="product-card" data-category="makeup">
+
+<img src="Eyeliner2.jpeg">
+
+<h3>ايلاينر-Beaulis DRAGIT</h3>
+
+<p>ناعم وسهل التطبيق</p>
+
+<span class="price">2.000 ر.ع</span>
+
+<button class="btn"
+onclick="addToCart('ايلاينر-Beaulis DRAGIT',2.000,'Eyeliner2.jpeg')">
+أضيفي إلى السلة
+</button>
+
+</div>
+
+<!-- PRODUCT 15 -->
+<div class="product-card" data-category="skin">
+
+<img src="handorange.png">
+
+<h3>Hand & Cuticle Butter-Orange Oil</h3>
+
+<p>يرطب اليدين و يغذي الأظافر</p>
+
+<span class="price">2.000 ر.ع</span>
+
+<button class="btn"
+onclick="addToCart('Hand & Cuticle Butter-Orange Oil',2.000,'handorange.png')">
+أضيفي إلى السلة
+</button>
+
+</div>
+
+<!-- PRODUCT 16 -->
+<div class="product-card" data-category="makeup">
+
+<img src="lip.jpeg">
+
+<h3>ملمع شفاه-Lip Gloss</h3>
+
+<p>يعطي لمعة جذابة وثابت</p>
+
+<span class="price">2.500 ر.ع</span>
+
+<button class="btn"
+onclick="addToCart('ملمع شفاه-Lip Gloss',2.500,'lip.jpeg')">
+أضيفي إلى السلة
+</button>
+
+</div>
+
+<!-- PRODUCT 17 -->
+<div class="product-card" data-category="makeup">
+
+<img src="lipstik3.png">
+
+<h3>روج زيبت-beulis ZIPIT</h3>
+
+<p>لون خوخي دافئ و طبيعي</p>
+
+<span class="price">2.000 ر.ع</span>
+
+<button class="btn"
+onclick="addToCart('روج زيبت-beulis ZIPIT',2.000,'lipstik3.png')">
+أضيفي إلى السلة
+</button>
+
+</div>
+
+<!-- PRODUCT 18 -->
+<div class="product-card" data-category="skin">
+
+<img src="wipes.png">
+
+<h3>Nail Polish Remover Wipws</h3>
+
+<p>مناديل خالية من الأسيتون لإزالة طلاء الأظافر بسهولة مع ترطيب</p>
+
+<span class="price">1.000 ر.ع</span>
+
+<button class="btn"
+onclick="addToCart('Nail Polish Remover Wipws',1.000,'wipes.png')">
+أضيفي إلى السلة
+</button>
+
+</div>
+
+<!-- PRODUCT 19 -->
+<div class="product-card" data-category="makeup">
+
+<img src="yellowmaskara.jpeg">
+
+<h3>Beaulis Mascara</h3>
+
+<p>تكثف الرموش </p>
+
+<span class="price">3.000 ر.ع</span>
+
+<button class="btn"
+onclick="addToCart('Beaulis Mascara',3.000,'yellowmaskara.jpeg')">
+أضيفي إلى السلة
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+
+<div class="footer-content">
+
+<h2>GUZELLIK OM</h2>
+
+<p>
+متجر متخصص في منتجات العناية بالبشرة والشعر والمكياج
+بجودة تركية أصلية.
+</p>
+
+<div class="contact-info">
+
+<p>
+<i class="fa-brands fa-whatsapp"></i>
+واتساب: +96891102129
+</p>
+
+<p>
+<i class="fa-brands fa-instagram"></i>
+@guzellik__om
+</p>
+
+</div>
+
+<div class="social-icons">
+
+<a href="https://wa.me/96891102129" target="_blank">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<a href="https://instagram.com/guzellik__om" target="_blank">
+
+<i class="fa-brands fa-instagram"></i>
+
+</a>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+© 2026 GUZELLIK OM | جميع الحقوق محفوظة
+
+</div>
+
+</footer>
+
+<!-- ================= SCRIPT ================= -->
+<script src="app.js"></script>
+
+<!-- FILTER SCRIPT -->
+<script>
+function filterProducts(category){
+    let products = document.querySelectorAll(".product-card");
+
+    products.forEach(p=>{
+        if(category === "all"){
+            p.style.display="block";
+        } else {
+            if(p.dataset.category === category){
+                p.style.display="block";
+            } else {
+                p.style.display="none";
+            }
+        }
+    });
+}
+</script>
+
+</body>
+</html>
