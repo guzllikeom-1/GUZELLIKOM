@@ -56,35 +56,21 @@ function displayCart(){
 
     cartItems.innerHTML = "";
 
-   let totalPrice = 0;
+    let totalPrice = 0;
+    let message = "🌸 طلب جديد من متجر GUZELLIK OM 🌸%0A%0A";
 
-let message = "🌸 طلب جديد من متجر GUZELLIK OM 🌸%0A%0A";
+    cart.forEach((item, index)=>{
 
-cart.forEach((item)=>{
+        totalPrice += item.price;
 
-    totalPrice += item.price;
-
-    message += `🛍️ ${item.name} - ${item.price.toFixed(3)} ر.ع%0A`;
-
-});
-
-message += "%0A";
-message += "━━━━━━━━━━━━━━━━━━%0A";
-message += `💰 مجموع الطلب: ${totalPrice.toFixed(3)} ر.ع%0A`;
-message += "━━━━━━━━━━━━━━━━━━%0A%0A";
-
-message += "🏦 بيانات التحويل البنكي:%0A";
-message += "👤 الاسم: FADOA SALEH%0A";
-message += "📱 رقم التحويل: 91102129%0A%0A";
-
-message += "📸 بعد التحويل يرجى إرسال إيصال التحويل لإكمال الطلب، شكرًا لتسوقكم من GUZELLIK OM 🌸";
+        message += `🛍️ ${item.name} - ${item.price.toFixed(3)} ر.ع%0A`;
 
         cartItems.innerHTML += `
         <div class="cart-item">
             <img src="${item.image}">
             <div class="cart-info">
                 <h3>${item.name}</h3>
-                <p>${item.price} ر.ع</p>
+                <p>${item.price.toFixed(3)} ر.ع</p>
             </div>
 
             <button class="remove-btn" onclick="removeItem(${index})">
@@ -94,7 +80,17 @@ message += "📸 بعد التحويل يرجى إرسال إيصال التحو
         `;
     });
 
-    if(total) total.innerText = totalPrice.toFixed(3) + " ر.ع";
+    message += "%0A━━━━━━━━━━━━━━━━━━%0A";
+    message += `💰 مجموع الطلب: ${totalPrice.toFixed(3)} ر.ع%0A`;
+    message += "━━━━━━━━━━━━━━━━━━%0A%0A";
+    message += "🏦 بيانات التحويل البنكي:%0A";
+    message += "👤 الاسم: FADOA SALEH%0A";
+    message += "📱 رقم التحويل: 91102129%0A%0A";
+    message += "📸 بعد التحويل يرجى إرسال إيصال التحويل لإكمال الطلب. شكرًا لتسوقكم من GUZELLIK OM 🌸";
+
+    if(total){
+        total.innerText = totalPrice.toFixed(3) + " ر.ع";
+    }
 
     if(checkout){
         checkout.href = "https://wa.me/96891102129?text=" + message;
