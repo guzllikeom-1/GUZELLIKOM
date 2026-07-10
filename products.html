@@ -40,8 +40,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 </ul>
 
 <!-- ICONS -->
-<div class="icons">
-
+<div class="icons"  id="navLinks">
+<!-- Mobile Menu Button -->
+<div class="menu-btn">
+    <i class="fa-solid fa-bars"></i>
+</div>
+    
     <!-- Cart -->
     <a href="cart.html" class="cart-icon">
         <i class="fa-solid fa-bag-shopping"></i>
@@ -474,6 +478,7 @@ onclick="addToCart('Beaulis Mascara',3.000,'yellowmaskara.jpeg')">
 <!-- ================= SCRIPT ================= -->
 <script src="app.js"></script>
 
+    
 <!-- FILTER SCRIPT -->
 <script>
 function filterProducts(category){
@@ -492,6 +497,17 @@ function filterProducts(category){
     });
 }
 </script>
+<script>
 
+const menuBtn = document.querySelector(".menu-btn");
+const navLinks = document.querySelector("#navLinks");
+
+menuBtn.onclick = () => {
+
+    navLinks.classList.toggle("active");
+
+};
+
+</script>
 </body>
 </html>
