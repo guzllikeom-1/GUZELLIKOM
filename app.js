@@ -56,14 +56,28 @@ function displayCart(){
 
     cartItems.innerHTML = "";
 
-    let totalPrice = 0;
-    let message = "🛍️ طلب جديد:%0A%0A";
+   let totalPrice = 0;
 
-    cart.forEach((item, index)=>{
+let message = "🌸 طلب جديد من متجر GUZELLIK OM 🌸%0A%0A";
 
-        totalPrice += item.price;
+cart.forEach((item)=>{
 
-        message += `• ${item.name} - ${item.price} ر.ع%0A`;
+    totalPrice += item.price;
+
+    message += `🛍️ ${item.name} - ${item.price.toFixed(3)} ر.ع%0A`;
+
+});
+
+message += "%0A";
+message += "━━━━━━━━━━━━━━━━━━%0A";
+message += `💰 مجموع الطلب: ${totalPrice.toFixed(3)} ر.ع%0A`;
+message += "━━━━━━━━━━━━━━━━━━%0A%0A";
+
+message += "🏦 بيانات التحويل البنكي:%0A";
+message += "👤 الاسم: FADOA SALEH%0A";
+message += "📱 رقم التحويل: 91102129%0A%0A";
+
+message += "📸 بعد التحويل يرجى إرسال إيصال التحويل لإكمال الطلب، شكرًا لتسوقكم من GUZELLIK OM 🌸";
 
         cartItems.innerHTML += `
         <div class="cart-item">
