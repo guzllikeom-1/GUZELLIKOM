@@ -84,7 +84,7 @@ function displayCart(){
     message += `💰 مجموع الطلب: ${totalPrice.toFixed(3)} ر.ع%0A`;
     message += "━━━━━━━━━━━━━━━━━━%0A%0A";
     message += "🏦 بيانات التحويل البنكي:%0A";
-    message += "👤 الاسم: FADOA SALEH%0A";
+    message += "👤 الاسم: FADOA %0A";
     message += "📱 رقم التحويل: 91102129%0A%0A";
     message += "📸 بعد التحويل يرجى إرسال إيصال التحويل لإكمال الطلب. شكرًا لتسوقكم من GUZELLIK OM 🌸";
 
