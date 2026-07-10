@@ -121,3 +121,18 @@ function showToast(message){
 // ===============================
 updateCartCount();
 displayCart();
+
+// Mobile Menu
+
+const menuBtn = document.querySelector(".menu-btn");
+const navLinks = document.querySelector("#navLinks");
+
+if(menuBtn && navLinks){
+
+    menuBtn.addEventListener("click", function(){
+
+        navLinks.classList.toggle("active");
+
+    });
+
+}
