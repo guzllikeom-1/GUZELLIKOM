@@ -18,7 +18,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <body>
 
 <!-- ================= HEADER ================= -->
-<header class="header">
+<header class="header" >
 
 <div class="container nav">
 
@@ -40,8 +40,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 </ul>
 
 <!-- ICONS -->
-<div class="icons">
-
+<div class="icons" id="navLinks">
+<!-- Mobile Menu Button -->
+<div class="menu-btn">
+    <i class="fa-solid fa-bars"></i>
+</div>
+    
     <!-- Cart -->
     <a href="cart.html" class="cart-icon">
         <i class="fa-solid fa-bag-shopping"></i>
@@ -202,6 +206,18 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 <!-- ================= SCRIPT ================= -->
 <script src="app.js"></script>
+<script>
 
+const menuBtn = document.querySelector(".menu-btn");
+const navLinks = document.querySelector("#navLinks");
+
+menuBtn.onclick = () => {
+
+    navLinks.classList.toggle("active");
+
+};
+
+</script>
+    
 </body>
 </html>
