@@ -114,13 +114,15 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 <h2>أرسلي لنا رسالة</h2>
 
-<input type="text" placeholder="الاسم الكامل">
+<input type="text" id="name" placeholder="الاسم الكامل">
 
-<input type="tel" placeholder="رقم الهاتف">
+<input type="tel" id="phone" placeholder="رقم الهاتف">
 
-<textarea placeholder="رسالتك"></textarea>
+<textarea id="message" placeholder="رسالتك"></textarea>
 
-<button>إرسال</button>
+<button onclick="sendWhatsApp()">
+إرسال
+</button>
 
 </div>
 
