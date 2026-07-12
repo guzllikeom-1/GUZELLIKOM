@@ -146,3 +146,37 @@ if(menuBtn && navLinks){
     });
 
 }
+// ===============================
+// Contact WhatsApp
+// ===============================
+
+function sendWhatsApp(){
+
+    const name = document.getElementById("name");
+    const phone = document.getElementById("phone");
+    const message = document.getElementById("message");
+
+    if(!name || !phone || !message){
+        return;
+    }
+
+    if(name.value.trim()==="" || phone.value.trim()==="" || message.value.trim()===""){
+        alert("يرجى تعبئة جميع الحقول");
+        return;
+    }
+
+    const text =
+`🌸 رسالة جديدة من موقع GUZELLIK OM 🌸
+
+👤 الاسم: ${name.value}
+
+📞 رقم الهاتف: ${phone.value}
+
+💬 الرسالة:
+${message.value}`;
+
+    window.open(
+        "https://wa.me/96891102129?text=" + encodeURIComponent(text),
+        "_blank"
+    );
+}
