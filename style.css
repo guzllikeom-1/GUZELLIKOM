@@ -1050,24 +1050,3 @@ justify-content:center;
 
 }
 
-function sendWhatsApp(){
-
-    const name = document.getElementById("name").value;
-    const phone = document.getElementById("phone").value;
-    const message = document.getElementById("message").value;
-
-    const text =
-`🌸 رسالة جديدة من موقع GUZELLIK OM
-
-👤 الاسم: ${name}
-
-📞 رقم الهاتف: ${phone}
-
-💬 الرسالة:
-${message}`;
-
-    window.open(
-        "https://wa.me/96891102129?text=" + encodeURIComponent(text),
-        "_blank"
-    );
-}
