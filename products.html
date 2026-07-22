@@ -77,10 +77,17 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 <div class="products-grid">
 
-<!-- PRODUCT 1 -->
-<div class="product-card" data-category="makeup">
+<!-- PRODUCT 1 - SOLD OUT -->
+<div class="product-card sold-out" data-category="makeup">
 
-<img src="greenmascara.png">
+<div class="product-image">
+    <img src="greenmascara.png">
+
+    <div class="sold-out-badge">
+        SOLD OUT
+        <small>غير متوفر حاليًا</small>
+    </div>
+</div>
 
 <h3>Beaulis Mascara-MAKIMIZE IT</h3>
 
@@ -88,9 +95,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 <span class="price">3.000 ر.ع</span>
 
-<button class="btn"
-onclick="addToCart('Beaulis Mascara-MAKIMIZE IT',3.000,'greenmascara.png')">
-أضيفي إلى السلة
+<button class="btn sold-out-btn" disabled>
+غير متوفر حاليًا
 </button>
 
 </div>
