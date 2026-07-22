@@ -1050,3 +1050,56 @@ justify-content:center;
 
 }
 
+/* ===============================
+        SOLD OUT
+================================ */
+
+.product-image{
+    position:relative;
+}
+
+.product-card.sold-out .product-image img{
+    opacity:0.55;
+    filter:grayscale(25%);
+}
+
+.sold-out-badge{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+
+    background:rgba(93,64,55,0.92);
+    color:white;
+
+    padding:12px 24px;
+    border-radius:10px;
+
+    font-size:18px;
+    font-weight:800;
+    letter-spacing:2px;
+
+    text-align:center;
+    white-space:nowrap;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+}
+
+.sold-out-badge small{
+    display:block;
+    margin-top:5px;
+
+    font-size:11px;
+    font-weight:500;
+    letter-spacing:0;
+}
+
+.sold-out-btn,
+.sold-out-btn:hover{
+    background:#bdb5b1;
+    color:white;
+
+    cursor:not-allowed;
+    transform:none;
+    opacity:.8;
+}
