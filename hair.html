@@ -94,10 +94,17 @@ onclick="addToCart('Hair Tonic',3.500,'tonner.png')">
 
 </div>
 
-<!-- PRODUCT 2 -->
-<div class="product-card" data-category="hair">
+<!-- PRODUCT 2 - SOLD OUT -->
+<div class="product-card sold-out" data-category="hair">
 
-<img src="alofera.PNG">
+<div class="product-image">
+    <img src="alofera.PNG">
+
+    <div class="sold-out-badge">
+        SOLD OUT
+        <small>غير متوفر حاليًا</small>
+    </div>
+</div>
 
 <h3>ماسك الألوفيرا للشعر-Bee Beauty</h3>
 
@@ -105,12 +112,12 @@ onclick="addToCart('Hair Tonic',3.500,'tonner.png')">
 
 <span class="price">0.600 ر.ع</span>
 
-<button class="btn"
-onclick="addToCart('ماسك الألوفيرا للشعر-Bee Beauty',0.600,'alofera.PNG')">
-أضيفي إلى السلة
+<button class="btn sold-out-btn" disabled>
+غير متوفر حاليًا
 </button>
 
 </div>
+    
 <!-- PRODUCT 3 -->
 <div class="product-card" data-category="hair">
 
