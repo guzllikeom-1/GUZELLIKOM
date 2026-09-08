@@ -132,10 +132,17 @@ onclick="addToCart('ماسك الكولاجين',1.500,'maskcollagen.png')">
 
 </div>
 
-<!-- PRODUCT 4 -->
-<div class="product-card" data-category="hair">
+<!-- PRODUCT 4 - SOLD OUT -->
+<div class="product-card sold-out" data-category="hair">
 
-<img src="tonner.png">
+<div class="product-image">
+    <img src="tonner.png">
+
+    <div class="sold-out-badge">
+        SOLD OUT
+        <small>غير متوفر حاليًا</small>
+    </div>
+</div>
 
 <h3>تونر الشعر</h3>
 
@@ -143,9 +150,8 @@ onclick="addToCart('ماسك الكولاجين',1.500,'maskcollagen.png')">
 
 <span class="price">3.500 ر.ع</span>
 
-<button class="btn"
-onclick="addToCart('Hair Tonic',3.500,'tonner.png')">
-أضيفي إلى السلة
+<button class="btn sold-out-btn" disabled>
+غير متوفر حاليًا
 </button>
 
 </div>
